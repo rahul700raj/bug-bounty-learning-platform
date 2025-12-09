@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Bounty Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">🎯 Bug Bounty Learning Platform</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#owasp">OWASP Top 10</a></li>
+                    <li><a href="#challenges">Challenges</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Learn Bug Bounty Hunting & Web Security</h2>
+                <p class="subtitle">Master OWASP Top 10 vulnerabilities through hands-on practice</p>
+                <div class="warning-box">
+                    <strong>⚠️ Educational Purpose Only</strong>
+                    <p>This platform contains intentionally vulnerable code for learning. Never use in production!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="owasp" class="section">
+            <div class="container">
+                <h2>OWASP Top 10 Demonstrations</h2>
+                <div id="owasp-categories" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="lab" class="section">
+            <div class="container">
+                <h2>Interactive Lab</h2>
+                <div class="lab-container">
+                    <div class="lab-controls">
+                        <select id="vulnerability-select">
+                            <option value="">Select a vulnerability...</option>
+                            <option value="broken-access">Broken Access Control</option>
+                            <option value="sql-injection">SQL Injection</option>
+                            <option value="xss">Cross-Site Scripting (XSS)</option>
+                            <option value="ssrf">SSRF</option>
+                        </select>
+                        <button id="test-vulnerable" class="btn btn-danger">Test Vulnerable</button>
+                        <button id="test-secure" class="btn btn-success">Test Secure</button>
+                    </div>
+                    <div id="lab-output" class="lab-output"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges" class="section">
+            <div class="container">
+                <h2>Practice Challenges</h2>
+                <div id="challenges-list" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="resources" class="section">
+            <div class="container">
+                <h2>Learning Resources</h2>
+                <div id="resources-list" class="resources-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bug Bounty Learning Platform | Educational Use Only</p>
+            <p>Created for ethical hackers and security researchers</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
